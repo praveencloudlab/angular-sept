@@ -1,0 +1,66 @@
+-> HTML5 and CSS
+-> typescript
+-> web technologies basics
+		-> client and server
+		-> request and response objects
+		-> http status codes from 1x to 5x
+		-> respose payload .. etc
+
+
+Angular
+-----------
+TOC
+-> intro to DOM manupulations
+-> component based design
+-> angular versions
+-> data bindings
+-> pipes (built in as well custom)
+-> forms and validations
+	-> template driven
+	-> reacticve forms
+-> Observable parrerns 
+		-> http clients and apis
+-> Routers
+
+
+Software
+-----------
+1.vs code editor / atom / sublime  
+2.node js
+3.mysql8/mongo db
+4.chrome browser
+5.angular cli (npm install @angular/cli -g) => this command must be executed 
+               as 'administrator'
+
+
+
+Angular : Google
+1.angular js : 1x (https://angularjs.org/)
+2.angular : 2x (https://angular.io/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This ILT will help the associates understand At the end of this Advanced -level program. TOC are</p> <p>Components (Angular, Dynamic, Styling) - Use of roles of classes and templates to form views in Angular components, load components dynamically, use styling as part of a particular template.<br />MVC Framework Knowledge - Understanding the architectural pattern that separates an application into three main logical components Model, View, and Controller.<br />TypeScript - Enforce data types and object structures and create public and private class arguments.<br />Two Way Binding - Use two-way binding to communicate changes between the application state and the view.<br />Form Validation - Use form validation in template-driven forms and handle errors appropriately, and use Sync and Async Reactive validators.<br />Routing, NgModules, Observables for data transmission and event handling, Dependency Injections, and APIs.</p>
+
+
+
+
