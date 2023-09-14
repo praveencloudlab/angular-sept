@@ -1,0 +1,31 @@
+Angular data binding
+========================
+1.interpolation : {{}}
+2.property binding : []
+3.event binding : ()
+4.two way binding : [()]
+
+
+2.property binding : []
+-------------------------
+-> Component to view-template
+-> binding of a compoent data to view-template(html) properties
+
+3.event binding : ()
+-----------------------
+-> view-template to Component 
+
+4.two way binding : [()]
+-----------------------------
+
+component <====> view-template
+(ngModel) => by default two way binding is disabled
+-> by defining FormsModule in the modules.ts, two way binding can be enabled
+
+
+
+
+
+
+
+

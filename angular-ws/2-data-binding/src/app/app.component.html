@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>App component</h1> <hr/>
+
+ 
+      <img [src]=imagePath width="10%">
+      <br/>
+
+      <button (click)="f1()">Clik Here</button>
+    <hr/>
+    Hide : <input type="checkbox" (change)="f2($event)">
+      <div [hidden]=hideText>
+        <h2>Div content</h2>
+    </div>
+
+    <br/>
+    <input  type="text" 
+            placeholder="Type Name"
+            (keyup)="f3($event)"
+            />
+      <h2>{{name}}</h2>
+      <hr/>
+      <input type="text" 
+            placeholder="Type Product Name"
+            [(ngModel)]=pname
+            /> 
+      <h2>{{pname}}</h2>
+
+      
+
+
+
+</div>
