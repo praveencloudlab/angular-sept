@@ -1,7 +1,6 @@
 <div class="container">
   <h1>Directives </h1> <hr/>
 
-
   <div *ngIf="name">
     <h2>Name: {{name}}</h2>
   </div>
@@ -9,8 +8,13 @@
   {{100>200?'Yes It is':'No.Its not'}}
   <hr/>
 
+  <span *ngFor="let btnLable of numbers">
+    <button [ngClass]="btnLable > 0 ? 'btn btn-success' : 'btn btn-danger'">{{btnLable}}</button>
+  </span>
+
   <ul>
-    <li *ngFor="let i of numbers">{{i}}</li>
+    <li *ngFor="let i of numbers">
+      {{i}}</li>
   </ul>
 
 <hr/>

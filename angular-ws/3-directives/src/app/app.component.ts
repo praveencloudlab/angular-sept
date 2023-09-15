@@ -13,7 +13,7 @@ export class AppComponent {
 
   data=products;
 
-  numbers=[10,20,54,43,32,98]
+  numbers=[-10,20,-54,43,-32,98]
 
 
 
