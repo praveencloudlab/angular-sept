@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Directives </h1> <hr/>
+
+
+  <div *ngIf="name">
+    <h2>Name: {{name}}</h2>
+  </div>
+
+  {{100>200?'Yes It is':'No.Its not'}}
+  <hr/>
+
+  <ul>
+    <li *ngFor="let i of numbers">{{i}}</li>
+  </ul>
+
+<hr/>
+
+<div *ngFor="let product of data">
+
+  <img src="{{product.thumbnail}}">
+
+</div>
+
+
+</div>
