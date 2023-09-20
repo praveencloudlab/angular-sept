@@ -1,0 +1,61 @@
+<div class="container">
+  <h1>Angular Pipes</h1>  <hr/>
+  <h3>Price (default is usd): {{1500 | currency}}</h3>
+  <h3>Price: {{1500 | currency:'INR'}}</h3>
+  <h3>Price: {{1500 | currency:'GBP'}}</h3>
+  <h3>Price: {{1500 | currency:'CAD'}}</h3>
+  <hr/>
+
+ <h3>{{person | json}}</h3>
+  {{JSON.stringify(person)}}
+
+  <h3>Today: {{today}}</h3>
+
+  <h3>Today(default date pipe): {{today | date }}</h3>
+  <h3>Medium: {{today | date:'medium' }}</h3>
+  <h3>Long: {{today | date:'long' }}</h3>
+  <h3>Full: {{today | date:'full' }}</h3>
+  <h3>Short: {{today | date:'short' }}</h3>
+  <h3>ShortDate: {{today | date:'shortDate' }}</h3>
+  <h3>MediumDate: {{today | date:'mediumDate' }}</h3>
+  <h3>Full Date: {{today | date:'fullDate' }}</h3>
+  <h3>Short Time: {{today | date:'shortTime' }}</h3>
+  <h3>Medium Time: {{today | date:'mediumTime' }}</h3>
+  <h3>Long Time: {{today | date:'longTime' }}</h3>
+  <h3>Full Time: {{today | date:'fullTime' }}</h3>
+  <h3>Time(24 date format): {{today | date:'HH:mm' }}</h3>
+  <h3>Custom Date: {{today | date:'yyyy/MM/dd' }}</h3>
+  <h3>Custom DateV2: {{today | date:'yyyy/MMM/dd' }}</h3>
+  <h3>Custom DateV3: {{today | date:'yyyy/MMMM/dd' }}</h3>
+  <hr/>
+
+  <h3>Upper case: {{'praveen'|uppercase}}</h3>
+  <h3>Lower Case case: {{'PRAVEEN'|lowercase}}</h3>
+  <h3>Lower Case: {{'PRAVEEN'|lowercase}}</h3>
+  <h3>Title Case: {{'this is a sample text. hello'|titlecase}}</h3>
+
+  <hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
