@@ -1,0 +1,50 @@
+<div class="container">
+  <h1>App Component</h1> <hr/>
+
+  <form [formGroup]="productForm" (ngSubmit)="saveProduct()">
+
+    <div>
+      <label>Product Name</label>
+      <input formControlName="name"/>
+      <div *ngIf="fc()['name']?.invalid && (fc()['name']?.dirty || fc()['name']?.touched)">
+        <div  *ngIf="fc()['name']?.errors?.['required']" class="text-danger">
+          Product name is Required
+        </div>
+
+        <div  *ngIf="fc()['name']?.errors?.['minlength']" class="text-danger">
+          Product Name should be at least 3 characters long
+        </div>
+
+
+    </div>
+    </div>
+
+    <div>
+      <label>Product Price</label>
+      <input formControlName="price"/>
+      <div *ngIf="fc()['price']?.invalid && (fc()['price']?.dirty || fc()['price']?.touched)">
+        <div  *ngIf="fc()['price']?.errors?.['required']" class="text-danger">
+          Price is Required
+        </div>
+
+        <div  *ngIf="fc()['price']?.errors?.['pattern']" class="text-danger">
+          Price should have only digits
+        </div>
+
+
+      </div>
+    </div>
+
+    <div>
+      <label>Product Description</label>
+      <textarea formControlName="description"></textarea>
+    </div>
+
+    <div>
+      <button>Save</button>
+    </div>
+
+  </form>
+
+
+</div>

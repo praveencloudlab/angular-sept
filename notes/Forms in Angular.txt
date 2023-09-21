@@ -1,0 +1,18 @@
+Forms in Angular
+==================
+1.template driven
+2.reactive
+
+Validations
+=================
+	min(min: number)
+ 	max(max: number)
+	required(control: AbstractControl<any, any>)
+	requiredTrue(control: AbstractControl<any, any>)
+  	email(control: AbstractControl<any, any>)
+  	minLength(minLength: number)
+ 	maxLength(maxLength: number)
+ 	pattern(pattern: string | RegExp)
+   	compose(validators: ValidatorFn[])
+  	composeAsync(validators: AsyncValidatorFn[])
+
