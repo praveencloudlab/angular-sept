@@ -1,0 +1,87 @@
+<div class="container">
+
+  <div>
+
+    <select [(ngModel)]="userId" (change)="loadUser()">
+      <option *ngFor="let user of users" value="{{user.id}}">{{user.id}} - {{user.name}}</option>
+    </select>
+
+    <div *ngIf="user">
+      <app-user-details [user]="user"></app-user-details>
+    </div>
+
+    <div *ngIf="isEdit">
+      <form [formGroup]="userForm">
+
+        <div>
+          <label>User ID</label>
+          <input formControlName="id">
+        </div>
+
+        <div>
+          <label>Name</label>
+          <input formControlName="name">
+        </div>
+
+        <div>
+          <label>User Name</label>
+          <input formControlName="username">
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input formControlName="email">
+        </div>
+
+        <div>
+          <button>Edit</button>
+        </div>
+
+      </form>
+    </div>
+
+
+    <hr/>
+    <table class="table table-bordered">
+
+        <thead>
+          <tr>
+             <th>ID</th>
+             <th>Name</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>
+            <th>Option1</th>
+            <th>Option2</th>
+
+        </tr>
+        </thead>
+
+      <tbody>
+      <tr *ngFor="let user of users">
+
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.website}}</td>
+        <td>{{user.company.name}}</td>
+        <td><button (click)="editUser(user.id)">Edit</button></td>
+        <td><button>Delete</button></td>
+
+
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr/>
+
+
+
+
+
+</div>
