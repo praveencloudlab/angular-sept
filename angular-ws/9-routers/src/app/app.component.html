@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>App Component</h1>
+  <hr/>
+
+
+  <div class="row">
+    <div class="col-2">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/list-products">Display</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/add-product">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">Cart</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-10">
+      <router-outlet> </router-outlet>
+    </div>
+  </div>
+
+
+
+</div>
