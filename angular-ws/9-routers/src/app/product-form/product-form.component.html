@@ -1,1 +1,44 @@
-<p>product-form works!</p>
+<div>
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Product Title</label>
+      <input formControlName="title">
+    </div>
+    <div>
+      <label>Product Price</label>
+      <input formControlName="price">
+    </div>
+
+    <div>
+      <label>Product Description</label>
+      <textarea formControlName="description"></textarea>
+    </div>
+
+    <div>
+      <label>Product Category</label>
+      <input formControlName="category">
+    </div>
+
+    <div>
+      <label>Image Name</label>
+      <input formControlName="image">
+    </div>
+    <div formGroupName="rating">
+      <div>
+        <label>Product Rating</label>
+        <input formControlName="rate">
+      </div>
+      <div>
+        <label>Rating Count</label>
+        <input formControlName="count">
+      </div>
+
+    </div>
+    <div>
+      <button>Save</button>
+    </div>
+
+
+
+  </form>
+</div>
