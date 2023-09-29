@@ -23,6 +23,12 @@ export class ProductService {
   }
 
 
+  loadCardItemsOfUser(userId:any){
+    return this.http.get(`${this.API_URL}/cart/${userId}`)
+  }
+
+
+
 
 
 
