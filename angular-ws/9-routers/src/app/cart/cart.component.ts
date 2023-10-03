@@ -10,13 +10,18 @@ import {ProductService} from "../product.service";
 })
 export class CartComponent implements OnInit{
   cartData!:any;
+  user!:any;
+
   constructor(private ps:ProductService) {}
 
   ngOnInit(): void {
-    this.ps.loadCardItemsOfUser(5).subscribe(resp=>{
+    this.ps.loadCardItemsOfUser(2).subscribe(resp=>{
       this.cartData=resp;
       this.loadProductDetails();
     });
+
+    this.ps.getUser(2).subscribe(resp=>this.user=resp);
+
 
   }
 
@@ -25,6 +30,7 @@ export class CartComponent implements OnInit{
   this.cartData.products.forEach((prod:any)=>{
     console.log(prod)
     this.ps.findProductById(prod.productId).subscribe(details=>prod.details=details);
+
   })
   }
 

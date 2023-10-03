@@ -28,6 +28,12 @@ export class ProductService {
   }
 
 
+  // get user data :
+  getUser(userId:any){
+    return this.http.get(`${this.API_URL}/users/${userId}`)
+  }
+
+
 
 
 
