@@ -15,15 +15,15 @@ export class CartComponent implements OnInit{
   constructor(private ps:ProductService) {}
 
   ngOnInit(): void {
-    this.ps.loadCardItemsOfUser(2).subscribe(resp=>{
+    this.ps.loadCardItemsOfUser(5).subscribe(resp=>{
       this.cartData=resp;
       this.loadProductDetails();
     });
 
     this.ps.getUser(2).subscribe(resp=>this.user=resp);
 
-
   }
+
 
   private loadProductDetails(){
 
@@ -32,10 +32,16 @@ export class CartComponent implements OnInit{
     this.ps.findProductById(prod.productId).subscribe(details=>prod.details=details);
 
   })
+
+
   }
 
 
-
+  getTotalPrice(): number {
+    return this.cartData.products.reduce((total:any, product:any) => {
+      return total + product.details.price * product.quantity;
+    }, 0);
+  }
 
 
 
